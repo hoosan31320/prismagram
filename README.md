@@ -1,2 +1,3 @@
 # prismagram
-Instagram Clone
+
+Instagram Clone with Express Prisma React
