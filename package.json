@@ -18,6 +18,7 @@
     "nodemon": "^1.18.0"
   },
   "scripts": {
+    "deploy": "prisma1 deploy",
     "dev": "nodemon --exec babel-node src/server.js"
   }
 }
