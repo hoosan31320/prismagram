@@ -13,9 +13,9 @@ Instagram Clone with Express Prisma React
 [x] Search by location
 [x] Follow User
 [x] Unfollow User
-[ ] See user profile
+[x] Edit my profile
+[x] See user profile
 [ ] See the full photo
-[ ] Edit my profile
 [ ] Upload a photo
 [ ] Edit the photo
 [ ] See the feed
