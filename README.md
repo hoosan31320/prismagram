@@ -16,8 +16,8 @@ Instagram Clone with Express Prisma React
 [x] Edit my profile
 [x] See user profile
 [x] See the full photo
-[ ] Upload a photo
-[ ] Edit the photo(Delete)
+[x] Upload a photo
+[x] Edit the photo(Delete)
 [ ] See the feed
 [ ] See rooms
 [ ] See room
