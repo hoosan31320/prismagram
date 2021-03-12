@@ -21,5 +21,5 @@ Instagram Clone with Express Prisma React
 [x] See the feed
 [x] Send private Message
 [x] See rooms
-[ ] See room
-[ ] Receive Message (Realtime)
+[x] See room
+[x] Receive Message (Realtime)
