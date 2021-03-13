@@ -1,4 +1,4 @@
-import { prisma } from "../../../../generated/prisma-client"
+import { prisma } from "../../../../generated/prisma-client";
 
 export default {
     Subscription: {
@@ -8,7 +8,7 @@ export default {
                 return prisma.$subscribe
                     .message({
                         AND: [
-                            { mutation_in: "CRATED" },
+                            { mutation_in: "CREATED" },
                             {
                                 node: {
                                     room: { id: roomId}
