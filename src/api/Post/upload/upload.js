@@ -8,6 +8,7 @@ export default {
             const { caption, files, location } = args;
             const post = await prisma.createPost({
                 caption,
+                location,
                 user: { connect: { id: user.id }}
             });
             files.forEach(
