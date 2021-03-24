@@ -8,19 +8,22 @@ export default {
         likes: ({ id }) => prisma.user({ id }).likes(),
         comments: ({ id }) => prisma.user({ id }).comments(),
         rooms: ({ id }) => prisma.user({ id }).rooms(),
+        postsCount: ({ id }) =>
+            prisma
+                .postsConnection({ where: { user: { id } } })
+                .aggregate()
+                .count(),
         followingCount: ({ id }) =>
             prisma
-                .userConnection({ where: { followers_some: { id } } })
+                .usersConnection({ where: { followers_some: { id } } })
                 .aggregate()
                 .count(),
         followersCount: ({ id }) =>
             prisma
-                .userConnection({ where: { following_some: { id } } })
+                .usersConnection({ where: { following_some: { id } } })
                 .aggregate()
                 .count(),
-        fullName: parent => {
-            return `${parent.firstName} ${parent.lastName}`;
-        },
+        fullName: parent => `${parent.firstName} ${parent.lastName}`,
         isFollowing: async (parent, _, { request }) => {
             const { user } = request;
             const { id: parentId } = parent;
