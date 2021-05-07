@@ -1,6 +1,6 @@
 type User {
   id: ID! @id
-  avatar: String @default(value: "https://www.flaticon.com/svg/vstatic/svg/1077/1077114.svg?token=exp=1616441539~hmac=b044c2b7f95648cb7c5ce619c5a99f81")
+  avatar: String @default(value: "https://image.shutterstock.com/image-vector/man-icon-vector-260nw-1040084344.jpg")
   username: String! @unique
   email: String! @unique
   firstName: String
